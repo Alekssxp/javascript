@@ -10,7 +10,7 @@ const personalMovieDB = {
     privat: false
 };
 let y = 0;
-while (y < 2) {
+do {
     const a = prompt('Один из последних просмотренных фильмов?', ''),
           b = prompt('На сколько оцените его?', '');
           y++;
@@ -30,7 +30,7 @@ while (y < 2) {
         console.log('error');
         y--;
     }
-}
+}while (y < 2);
 
 
 
